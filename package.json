@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "testcafe chrome:headless Tests/*",
     "test:chrome": "testcafe chrome:headless Tests/*",
     "test:local": "testcafe chrome Tests/*",
     "test:report": "testcafe chrome Tests/* --skips-js-erros html:reports/htmlReports/POMreports.html",
