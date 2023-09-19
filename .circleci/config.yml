@@ -8,8 +8,7 @@ jobs:
       - image: cimg/node:lts-browsers
     steps:
       - checkout
-      - browser-tools/install-browser-tools:
-          chorme-version: 116.0.5845.110
+      - browser-tools/install-browser-tools
       - node/install-packages
       - run:
           command: npm run test
