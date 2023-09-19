@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "testcafe chrome:headless Tests/* --skips-js-erros html:reports/htmlReports/POMreports.html",
+    "test:chrome": "testcafe chrome:headless Tests/*",
     "test:local": "testcafe chrome Tests/*",
-    "test:report": "testcafe chrome Tests/*",
+    "test:report": "testcafe chrome Tests/* --skips-js-erros html:reports/htmlReports/POMreports.html",
     "prepare": "husky install"
   },
   "repository": {
