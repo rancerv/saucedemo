@@ -1,0 +1,33 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome:headless Tests/* --skips-js-erros html:reports/htmlReports/POMreports.html",
+    "test:local": "testcafe chrome Tests/*",
+    "test:report": "testcafe chrome Tests/*",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rancerv/testcafe.git"
+  },
+  "author": "Rancer Ventura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rancerv/testcafe/issues"
+  },
+  "homepage": "https://github.com/rancerv/testcafe#readme",
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-plugin-testcafe-community": "^2.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "testcafe": "^3.0.0",
+    "testcafe-reporter-xunit": "^2.2.2"
+  },
+  "dependencies": {
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
