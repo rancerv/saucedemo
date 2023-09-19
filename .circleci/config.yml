@@ -1,14 +1,15 @@
 version: 2.1
 orbs:
   node: circleci/node@4.1.0
-  browser-tools: circleci/browser-tools@1.4.1
+  browser-tools: circleci/browser-tools@1.4.4
 jobs:
   test:
     docker:
       - image: cimg/node:lts-browsers
     steps:
       - checkout
-      - browser-tools/install-browser-tools
+      - browser-tools/install-browser-tools:
+          chorme-version: 116.0.5845.110
       - node/install-packages
       - run:
           command: npm run test
